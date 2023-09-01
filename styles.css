@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(241, 241, 241);
+    margin: 0px;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 1000;
+    background-color:rgb(248, 230, 230);
+    
+
+
+}
+.title{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0%;
+    cursor: pointer;
+
+}
+.title:hover{
+    color:orangered;
+    transition: all 0.4s;
+}
+.name{
+    border-right: 2px solid black;
+    padding: 1rem;
+}
+.resume-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+
+
+    border-left: 2px solid black;
+}
+/*Main component styling*/
+
+.main-component{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-component{
+    width: 60%;
+    border-right: 2px solid black;
+    height: 100vh;
+    
+}
+.my-info{
+    border-bottom: 2px solid black;
+    padding: 1.5rem;
+    margin-top: 5rem;
+}
+.right-component{
+    width:40%;
+    height: 100vh;
+    background-image: url("./assets/leone-venter-VieM9BdZKFo-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 60px;
+    
+}
+.chips-flex{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+}
+.chips{
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid black;
+    padding: 0.35rem 1rem;
+    border-radius: 4rem;
+    min-width: 100px;
+    text-align: center;
+    cursor: pointer;
+
+}
+.chips:hover{
+    color: white;
+    background-color: black;
+    transition: all 0.3s;
+}
+.main-text{
+    font-size: 24px;
+    font-weight: 700;
+}
+.education{
+    border-bottom: 2px solid black;
+    padding: 1.5rem;
+
+}
+.para,
+.list{
+    font-size: 24px;
+
+}
+a:hover{
+    color: orangered;
+    text-decoration: underline;
+    transition: all 0.1s;
+}
+.social-component{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+.social-flex{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+.social-image{
+    border: 2px solid black;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-image:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+@media only screen and (max-width:1100px) {
+    .right-component,
+    .left-component{
+        width: 50%;
+    }
+    
+}
+
+@media only screen and (max-width:950px){
+    .main-component{
+        flex-direction: column-reverse;
+    }
+
+    .right-component,
+    .left-component{
+        width: 100%;
+    }
+    .chips{
+        font-size: 16px;
+        min-width: 0px;
+    }
+    .my-info{
+        margin-top: 0rem;
+    }
+    .social-flex{
+        gap: 1rem;
+    }
+    .name,.resume-div{
+        border: none;
+    }
+    .resume-div h1{
+        display: none;
+
+    }
+    .para,.list{
+        font-size: 19px;
+    }
+    .my-info,.social-component,.education{
+        padding: 1rem;
+    }
+}
